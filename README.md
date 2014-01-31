@@ -1,9 +1,26 @@
-ecodistricts_framework
+EcoDistricts/Sustainable Systems Framework
 ======================
 
-The initial programming framework for the EcoDistricts project
+The initial programming framework for the San Francisco Sustainable Systems project
 
 ##San Francisco Sustainable Systems Project 
+We are helping San Francisco use data collected by the city to help inform community-driven sustainable development. This project 
+
+###Setup
+First, you'll need to set up your machine to work with the data in a shared environment. We've made this easy for you by using [vagrant](link to vagrant).
+
+To get started take the following steps
+- **Clone this repo** by opening up terminal, changing directories, and typing `git clone git@github.com:hunterowens/ecodistricts_framework.git`
+- **Change drives** into your newly cloned project folder by typing `cd ecodistricts_framework`
+- **Start Vagrant** by typing `vagrant up`
+
+After a few moments, you will have a a vagrant instance up and running and you will be working with the common development environment used by all team members.
+
+
+###Tasks
+
+
+
 ###Process
 
 ####Managing Data
