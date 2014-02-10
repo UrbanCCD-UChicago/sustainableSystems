@@ -1,5 +1,5 @@
 import psycopg2 
-from utils.db_connection import get_connection, close_connection
+from utils import get_connection
 
 def main():
 	conn = get_connection()
