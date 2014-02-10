@@ -16,6 +16,21 @@ To get started take the following steps
 
 After a few moments, you will have a a vagrant instance up and running and you will be working with the common development environment used by all team members.
 
+You should also set up a virtual env called 'venv' by running `virtualenv venv` in the root. 
+
+#### Syncing Data
+
+First, you're going to need to install the [AWS command line tools](http://aws.amazon.com/cli/), which can be done by running `pip install awscli`. Then, create a folder in the root directory of the project called `data`. This folder will not be added to git (even when you run `git add .`) because it is in the `.gitignore`. 
+
+Then, in your venv's activate script (should be at 'venv/bin/activate', simply open with a text editor) add 
+`
+export AWS_ACCESS_KEY_ID=AKIAJIBF5J7ASUINF5NA
+export AWS_SECRET_ACCESS_KEY=ke9ITTJWFX0R/XWCHyf2+sucIyy07ziHCYzO5J1l
+export  AWS_DEFAULT_REGION=us-west-2
+`
+to the bottom of the script and reactivate the virtualenv. 
+
+Then, you should be able to run `aws s3 sync  s3://ecodistricts /path/to/data/directory` and you'll have a copy of the data stored on your local machine. 
 
 ###Tasks
 
