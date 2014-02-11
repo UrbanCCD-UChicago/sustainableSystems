@@ -14,6 +14,7 @@ def main():
 			polygon geography(POLYGON,4326)
 			);""",
 		"""CREATE TABLE IF NOT EXISTS point_geographies(
+			name text NOT NULL,
 			id uuid PRIMARY KEY NOT NULL,
 			address text NOT NULL, 
 			city text NOT NULL,
