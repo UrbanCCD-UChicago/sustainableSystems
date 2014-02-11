@@ -5,8 +5,11 @@ class Geography(object):
 	has a name value and geog value that are 
 	passed as constructors
 	"""
-	def __init__(self,name=name,geog=geog,id = uuid.uuid4()):
+	def __init__(self,name,geog,id = uuid.uuid4()):
 		self.name = name
 		self.geog = geog
 		self.id = id
+	def __str__(self):
+		return "%s,%s" % (self.name, self.geog)
+
 
