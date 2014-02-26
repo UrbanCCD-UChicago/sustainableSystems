@@ -40,3 +40,5 @@ venv
 
 #avoid the data directory so we can sync it with S3
 data
+
+notebooks
